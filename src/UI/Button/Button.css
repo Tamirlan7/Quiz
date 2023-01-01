@@ -1,0 +1,18 @@
+button {
+    padding: 10px 50px;
+    text-align: center;
+    border: 1px solid teal;
+    background: transparent;
+    color: teal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+button:hover {
+    border: 1px solid transparent;
+    background: teal;
+    transition: .5s ease;
+    color: #fff;
+    box-shadow: -1px 3px 4px #000;
+}
