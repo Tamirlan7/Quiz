@@ -1,6 +1,10 @@
 export default class Server {
     static async getQuestions() {
-        const response = await fetch('./questions.json');
-        return await response.json();
+        try {
+            const response = await fetch('./questions.json');
+            return await response.json();
+        } catch (e) {
+            console.log(e.message);
+        };
     };
 };

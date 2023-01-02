@@ -4,8 +4,10 @@ import './Slider.css';
 export default function Slider () {
 
     return (
-        <div className="slider">
-            
-        </div>
+        <span className="slider">
+            <span className="inner__slider">
+
+            </span>
+        </span>
     )
 }

@@ -1,0 +1,30 @@
+.question {
+    margin-bottom: 10px;
+}
+
+.question__block {
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.question__inner__block {
+    min-width: 30vw;
+    text-align: center;
+}
+
+.option {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.option:not(:last-child) {
+    margin-bottom: 10px;
+}
