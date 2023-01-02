@@ -12,7 +12,6 @@ export default function Questions () {
 
     useEffect(() => {
         dispatch(setQuestionFromServerWatcher());
-        console.log(currentQuestion)
     }, []);
 
     return (
