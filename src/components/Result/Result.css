@@ -1,0 +1,7 @@
+.result {
+    text-align: center;
+}
+
+.result > h3 {
+    margin-bottom: 15px;
+}

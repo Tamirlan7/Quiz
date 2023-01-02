@@ -1,6 +1,7 @@
 const defaultState = {
     questions: [],
     currentQuestion: 0,
+    correctAnswers: 0
 };
 
 const SET_QUESTIONS = 'SET_QUESTIONS';
@@ -10,6 +11,8 @@ const NEXT_QUESTION = 'NEXT_QUESTION';
 
 const INCREASE_SLIDER = 'INCREASE_SLIDER';
 
+const INCREMENT_CORRECT_ANSWERS = 'INCREMENT_CORRECT_ANSWERS';
+
 export default function questionsReducer (state = defaultState, action) {
     switch(action.type) {
         case INCREASE_SLIDER:
@@ -18,6 +21,8 @@ export default function questionsReducer (state = defaultState, action) {
             return {...state, questions: [...action.payload]};
         case NEXT_QUESTION:
             return {...state, currentQuestion: state.currentQuestion + 1}
+        case INCREMENT_CORRECT_ANSWERS:
+            return {...state, correctAnswers: state.correctAnswers + 1}
         default:
             return state;
     };
@@ -29,3 +34,5 @@ export const setQuestionFromServerWatcher = () => ({type: SET_QUESTIONS_WATCHER}
 export const nextQuestionAction = payload => ({type: NEXT_QUESTION, payload});
 
 export const increaseSliderAction = payload => ({type: INCREASE_SLIDER, payload});
+
+export const incrementCorrectAnswersAction = payload => ({type: INCREMENT_CORRECT_ANSWERS, payload});
