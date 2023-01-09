@@ -3,7 +3,7 @@ import './Main.css';
 import Button from '../../UI/Button/Button'
 import { useNavigate } from "react-router-dom";
 
-export default function Main() {
+const Main: React.FC = () => {
     const navigate = useNavigate();
 
     const getStarted = () => {
@@ -30,3 +30,5 @@ export default function Main() {
         </div>  
     );
 };
+
+export default Main;

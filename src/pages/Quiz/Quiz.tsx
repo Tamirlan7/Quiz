@@ -2,7 +2,7 @@ import React from "react";
 import './Quiz.css';
 import Questions from '../../components/Questions/Questions';
 
-export default function Quiz () {
+const Quiz: React.FC = () => {
 
     return (
         <div className="quiz">
@@ -10,3 +10,5 @@ export default function Quiz () {
         </div>
     );
 };
+
+export default Quiz;

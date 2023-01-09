@@ -1,11 +1,13 @@
 import React from "react";
 import './Wrong.css';
 
-export default function Wrong () {
+const Wrong: React.FC = () => {
 
     return (
         <div className="wrong">
             
         </div>
-    )
-}
+    );
+};
+
+export default Wrong;

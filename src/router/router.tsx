@@ -1,16 +1,19 @@
 import Main from "../pages/Main/Main";
 import Quiz from "../pages/Quiz/Quiz";
 
-const router = [
+interface Route {
+    path: string;
+    element: React.ReactNode;
+};
+
+const router: Route[] = [
     {
         path: '/',
         element: <Main />,
-        exact: true
     },
     {
         path: '/quiz',
         element: <Quiz />,
-        exact: true
     }
 ];
 

@@ -1,11 +1,13 @@
 import React from "react";
 import './Success.css';
 
-export default function Success () {
+const Success: React.FC = () => {
 
     return (
         <div className="success">
             
         </div>
-    )
-}
+    );
+};
+
+export default Success;

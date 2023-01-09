@@ -8,7 +8,7 @@ export default function App () {
     return (
         <div className="App">
             <Routes>
-                {router.map(route => <Route key={route.element} path={route.path} element={route.element} exact={route.exact} />)}
+                {router.map(route => <Route path={route.path} element={route.element} />)}
             </Routes>
         </div>
     );
